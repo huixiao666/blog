@@ -10,19 +10,19 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="在线图片 [点击](https://huixiao666.github.io/B/)
+<meta name="description" content="皮卡商店 [打开](https://huixiao666.github.io/A/)
 
 
-在线视频 [点击](https://huixiao666.github.io/A15/)。">
-<meta property="og:title" content="涩图">
-<meta property="og:description" content="在线图片 [点击](https://huixiao666.github.io/B/)
+。">
+<meta property="og:title" content="网站">
+<meta property="og:description" content="皮卡商店 [打开](https://huixiao666.github.io/A/)
 
 
-在线视频 [点击](https://huixiao666.github.io/A15/)。">
+。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://huixiao666.github.io/blog/post/se-tu.html">
+<meta property="og:url" content="https://huixiao666.github.io/blog/post/wang-zhan.html">
 <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
-<title>涩图</title>
+<title>网站</title>
 
 
 
@@ -55,7 +55,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">涩图</h1>
+<h1 class="postTitle">网站</h1>
 <div class="title-right">
     <a href="https://huixiao666.github.io/blog" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -63,7 +63,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/huixiao666/blog/issues/7" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/huixiao666/blog/issues/6" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -79,8 +79,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>在线图片 <a href="https://huixiao666.github.io/B/" rel="nofollow">点击</a></p>
-<p>在线视频 <a href="https://huixiao666.github.io/A15/" rel="nofollow">点击</a></p></div>
+<div class="markdown-body" id="postBody"><p>皮卡商店 <a href="https://huixiao666.github.io/A/" rel="nofollow">打开</a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
@@ -139,7 +138,11 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
-
+cmButton=document.getElementById("cmButton");
+    span=document.createElement("span");
+    span.setAttribute("class","Counter");
+    span.innerHTML="1";
+    cmButton.appendChild(span);
 
 
 function openComments(){
